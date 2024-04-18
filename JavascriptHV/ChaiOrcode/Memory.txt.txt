@@ -1,0 +1,5 @@
+Stack - Primitive Data types
+1- In stack u will get copy.
+
+Heap - Non Primitive types
+1- In Heap u will get reference.

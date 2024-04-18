@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title> Scheduling </title>
+       <script>
+           function task1(){
+               console.log(new Date());
+               console.time("task1");
+               console.log("Executing task1");
+               console.timeEnd("task1");
+           }
+       </script>
+   </head>
+   <body>
+       <script>
+           console.log(new Date());
+           console.time("Main");
+           console.log("Starting Work");
+           console.log("Scheduling Task1");
+           setTimeout(task1,3000);
+           console.log("Ending Work");
+           console.timeEnd("Main");
+       </script>
+   </body>
+</html>

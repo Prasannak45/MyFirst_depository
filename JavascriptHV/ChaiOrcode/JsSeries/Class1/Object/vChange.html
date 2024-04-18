@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The indexOf() Method</h2>
+
+<p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+<p>The position of the first occurrence of "locate" is:</p>
+<p id="demo">1</p>
+<button type="button" onclick="fun()">Click</button>
+<div>
+    <span><label for="fname">First Name:</label></span>
+    <span><input type="text" id="name" name="fname"></span>
+</div>
+<div>
+    <span ><label for="lname">Last Name:</label></span>
+    <span><input type="text" id="lname" name="lname"></span>
+</div>
+<button type="button" onclick="res()">Start</button>
+<p id="res"></p>
+
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+const fun=()=>{
+    document.getElementById("demo").innerHTML = index+=1; 
+}
+// <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+let fName=document.getElementById("fname").value;
+let lName=document.getElementById("lname").innerHTML;
+const res=()=>{
+    document.getElementById("res").innerHTML=`The username is ${fName} and the username Last name is ${lName}`
+}
+
+</script>
+
+</body>
+</html>
